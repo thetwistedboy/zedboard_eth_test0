@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Jun  4 20:40:20 2026
+# Process ID         : 37522
+# Current directory  : /home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.runs/impl_1
+# Command line       : vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file           : /home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.runs/impl_1/design_1_wrapper.vdi
+# Journal file       : /home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.runs/impl_1/vivado.jou
+# Running On         : jkelleylaptop
+# Platform           : Linuxmint
+# Operating System   : Linux Mint 22.3
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16453 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18600 MB
+# Available Virtual  : 12987 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

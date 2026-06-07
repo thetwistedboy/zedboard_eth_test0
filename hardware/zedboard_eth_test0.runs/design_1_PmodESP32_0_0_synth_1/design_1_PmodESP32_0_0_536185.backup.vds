@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Jun  4 20:13:08 2026
+# Process ID         : 536185
+# Current directory  : /home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.runs/design_1_PmodESP32_0_0_synth_1
+# Command line       : vivado -log design_1_PmodESP32_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PmodESP32_0_0.tcl
+# Log file           : /home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.runs/design_1_PmodESP32_0_0_synth_1/design_1_PmodESP32_0_0.vds
+# Journal file       : /home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.runs/design_1_PmodESP32_0_0_synth_1/vivado.jou
+# Running On         : jkelleylaptop
+# Platform           : Linuxmint
+# Operating System   : Linux Mint 22.3
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 1870.535 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16453 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18600 MB
+# Available Virtual  : 5706 MB
+#-----------------------------------------------------------
+source design_1_PmodESP32_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jkelley/Documents/Xilinx/ip/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+Command: synth_design -top design_1_PmodESP32_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 536315
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2276.465 ; gain = 484.242 ; free physical = 172 ; free virtual = 1876
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_PmodESP32_0_0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/synth/design_1_PmodESP32_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PmodESP32' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ipshared/e695/src/PmodESP32.v:12]
+INFO: [Synth 8-638] synthesizing module 'PmodESP32_axi_gpio_0_0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_axi_gpio_0_0/synth/PmodESP32_axi_gpio_0_0.vhd:90]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 4 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_axi_gpio_0_0/synth/PmodESP32_axi_gpio_0_0.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
+INFO: [Synth 8-226] default block is never used [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:833]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS4' of component 'xpm_cdc_array_single' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:851]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS5' of component 'xpm_cdc_array_single' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:880]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
+INFO: [Synth 8-256] done synthesizing module 'PmodESP32_axi_gpio_0_0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_axi_gpio_0_0/synth/PmodESP32_axi_gpio_0_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'PmodESP32_axi_uartlite_0_0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_axi_uartlite_0_0/synth/PmodESP32_axi_uartlite_0_0.vhd:86]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at '/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1951' bound to instance 'U0' of component 'axi_uartlite' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_axi_uartlite_0_0/synth/PmodESP32_axi_uartlite_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2013]
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1479]
+INFO: [Synth 8-638] synthesizing module 'baudrate' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1288]
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1288]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:794]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_single' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:794]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1479]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2013]
+INFO: [Synth 8-256] done synthesizing module 'PmodESP32_axi_uartlite_0_0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_axi_uartlite_0_0/synth/PmodESP32_axi_uartlite_0_0.vhd:86]
+INFO: [Synth 8-6157] synthesizing module 'PmodESP32_pmod_bridge_0_0' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_pmod_bridge_0_0/synth/PmodESP32_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodESP32_pmod_bridge_0_0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/src/PmodESP32_pmod_bridge_0_0/synth/PmodESP32_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PmodESP32' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ipshared/e695/src/PmodESP32.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PmodESP32_0_0' (0#1) [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/synth/design_1_PmodESP32_0_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G0.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:617]
+INFO: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G0.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:617]
+INFO: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:748]
+INFO: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:748]
+INFO: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G2.READ_REG2_GEN[2].GPIO2_DBus_i_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:748]
+INFO: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G2.READ_REG2_GEN[3].GPIO2_DBus_i_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd:748]
+INFO: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+INFO: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:90]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:100]
+WARNING: [Synth 8-3848] Net in0_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:104]
+WARNING: [Synth 8-3848] Net in1_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:105]
+WARNING: [Synth 8-3848] Net in3_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:107]
+WARNING: [Synth 8-3848] Net in4_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:108]
+WARNING: [Synth 8-3848] Net in5_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:109]
+WARNING: [Synth 8-3848] Net in6_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:110]
+WARNING: [Synth 8-3848] Net in7_I in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:111]
+WARNING: [Synth 8-3848] Net out2_O in module/entity pmod_concat does not have driver. [/home/jkelley/Documents/Xilinx/zedboard_eth_test0/hardware/zedboard_eth_test0.gen/sources_1/bd/design_1/ip/design_1_PmodESP32_0_0/ipshared/ff0e/src/pmod_concat.v:139]
+INFO: [Synth 8-7129] Port in_top_bus_I[3] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_I[2] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_I[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_I[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_i2c_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_i2c_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_uart_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_uart_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in0_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in1_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in3_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in4_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in5_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in6_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in7_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port out2_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_O[3] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_O[2] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_O[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_O[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_T[3] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_T[2] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_T[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_bus_T[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_i2c_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_i2c_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_i2c_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_top_i2c_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_uart_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_uart_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in0_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in2_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in3_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in4_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in5_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in6_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in7_O in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in0_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in1_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in2_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in3_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in4_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in5_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in6_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port in7_T in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port out1_I in module pmod_concat is either unconnected or has no load
+INFO: [Synth 8-7129] Port Address_In_Erly[2] in module address_decoder__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus_RNW in module address_decoder__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[3] in module slave_attachment__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_cs in module uartlite_core is either unconnected or has no load
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single is either unconnected or has no load
+INFO: [Synth 8-7129] Port ABus_Reg[1] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port ABus_Reg[2] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port ABus_Reg[3] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port ABus_Reg[4] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port ABus_Reg[7] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port ABus_Reg[8] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port BE_Reg[0] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port BE_Reg[1] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port BE_Reg[2] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port BE_Reg[3] in module GPIO_Core is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[1] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[2] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[3] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[4] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[5] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[6] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[7] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[8] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[9] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[10] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[11] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[12] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[13] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[14] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[15] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[16] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[17] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[18] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[19] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[20] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[21] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[22] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[23] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[24] in module interrupt_control is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_data[25] in module interrupt_control is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:07:45 . Memory (MB): peak = 2377.434 ; gain = 585.211 ; free physical = 184 ; free virtual = 1707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:07:45 . Memory (MB): peak = 2383.371 ; gain = 591.148 ; free physical = 182 ; free virtual = 1706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:07:45 . Memory (MB): peak = 2383.371 ; gain = 591.148 ; free physical = 189 ; free virtual = 1706
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2383.371 ; gain = 0.000 ; free physical = 179 ; free virtual = 1705
