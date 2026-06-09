@@ -281,7 +281,7 @@ TOOLCHAIN_DEP_FLAGS:STRING= -MMD -MP
 TOOLCHAIN_EXTRA_C_FLAGS:STRING= -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
 
 //Enable Interval Timer
-XILTIMER_en_interval_timer:BOOL=false
+XILTIMER_en_interval_timer:BOOL=OFF
 
 //This parameter is used to select specific timer for sleep functionality
 XILTIMER_sleep_timer:STRING=Default
@@ -387,10 +387,10 @@ lwip220_arp_queueing:STRING=1
 lwip220_arp_table_size:STRING=10
 
 //Turn on lwIP Debug?
-lwip220_debug:BOOL=false
+lwip220_debug:BOOL=OFF
 
 //Turn on lwIP Debug?
-lwip220_debug_options:BOOL=false
+lwip220_debug_options:BOOL=OFF
 
 //Size of TCP receive mbox queue.
 lwip220_default_tcp_recvmbox_size:STRING=200
@@ -399,10 +399,10 @@ lwip220_default_tcp_recvmbox_size:STRING=200
 lwip220_default_udp_recvmbox_size:STRING=100
 
 //Is DHCP required?
-lwip220_dhcp:BOOL=true
+lwip220_dhcp:BOOL=ON
 
 //Debug dhcp protocol
-lwip220_dhcp_debug:BOOL=true
+lwip220_dhcp_debug:BOOL=ON
 
 //Is DHCP required?
 lwip220_dhcp_options:BOOL=ON
@@ -423,7 +423,7 @@ lwip220_igmp_debug:BOOL=OFF
 lwip220_igmp_options:BOOL=OFF
 
 //Debug IP layer
-lwip220_ip_debug:BOOL=true
+lwip220_ip_debug:BOOL=ON
 
 //Global default TTL used by transport layers
 lwip220_ip_default_ttl:STRING=255
@@ -454,7 +454,7 @@ lwip220_ipv6_enable:BOOL=OFF
 lwip220_ipv6_options:BOOL=ON
 
 //ACD check on offered addresses?
-lwip220_lwip_dhcp_does_acd_check:BOOL=true
+lwip220_lwip_dhcp_does_acd_check:BOOL=ON
 
 //TCPIP input core locking
 lwip220_lwip_tcpip_core_locking_input:BOOL=OFF
@@ -509,7 +509,7 @@ lwip220_n_tx_descriptors:STRING=64
 lwip220_netif_debug:BOOL=OFF
 
 //Drops support for sys_timeout when NO_SYS==1
-lwip220_no_sys_no_timers:BOOL=false
+lwip220_no_sys_no_timers:BOOL=OFF
 
 //Debug pbuf layer
 lwip220_pbuf_debug:BOOL=OFF
